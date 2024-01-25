@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(180, 180, 180);
+    font-family: 'Poppins', sans-serif;
+}
+.calculator {
+    display: block;
+    position:relative;
+    margin: 20px auto;
+    width: 15%;
+    min-width: 280px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 45px;
+    border: 1px solid #ccc;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);;
+    padding: 20px 5px;
+  }
+
+  .calculator::before {
+    content: '';  
+    position: absolute;
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 90px; 
+    height: 2px; 
+    background-color: #fff; 
+    border-radius: 6px; 
+  }
+
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    align-items: flex-end;
+    margin: 0 2em -2.5em 0;
+    overflow: hidden;
+}
+.result p{
+    font-size: 3rem;
+}
+button{
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0.3em 0.3em 0;
+}
+
+.buttons{
+    display: flex ;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.large-button{
+    width: 108px;
+    border-radius: 65px;
+}
+
+.large-button span{
+    display: flex;
+    padding-left: 0.6em;
+}
+
+.grey{
+    background-color: grey;
+    color: black;
+}
+
+.grey:hover{
+    background-color: #d9d9d7;
+}
+
+.orange{
+    background-color: orange;
+}
+.orange:hover{
+    background-color: #ffbe7d;
+}
+
+.dgrey{
+    background-color: rgb(58, 58, 58);
+}
+
+.dgrey:hover{
+    background-color: #9e9e9d;
+}
